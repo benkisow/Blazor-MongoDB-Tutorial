@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bkiso\\OneDrive\\Dev Projects\\BlazorToDoListTutorial\\ToDoListApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8656039-C00B-4F4D-BC65-49FD976926FD}|ToDoListApp\\ToDoListApp.csproj|c:\\users\\bkiso\\onedrive\\dev projects\\blazortodolisttutorial\\todolistapp\\todolistapp\\controllers\\listitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8656039-C00B-4F4D-BC65-49FD976926FD}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\controllers\\listitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8656039-C00B-4F4D-BC65-49FD976926FD}|ToDoListApp\\ToDoListApp.csproj|c:\\users\\bkiso\\onedrive\\dev projects\\blazortodolisttutorial\\todolistapp\\todolistapp\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8656039-C00B-4F4D-BC65-49FD976926FD}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8656039-C00B-4F4D-BC65-49FD976926FD}|ToDoListApp\\ToDoListApp.csproj|c:\\users\\bkiso\\onedrive\\dev projects\\blazortodolisttutorial\\todolistapp\\todolistapp\\models\\listitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8656039-C00B-4F4D-BC65-49FD976926FD}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\models\\listitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\bkiso\\OneDrive\\Dev Projects\\BlazorToDoListTutorial\\ToDoListApp\\ToDoListApp\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "ToDoListApp\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\bkiso\\OneDrive\\Dev Projects\\BlazorToDoListTutorial\\ToDoListApp\\ToDoListApp\\Pages\\Index.razor",
+              "RelativeToolTip": "ToDoListApp\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-02T14:21:19.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListItemController.cs",
+              "DocumentMoniker": "C:\\Users\\bkiso\\OneDrive\\Dev Projects\\BlazorToDoListTutorial\\ToDoListApp\\ToDoListApp\\Controllers\\ListItemController.cs",
+              "RelativeDocumentMoniker": "ToDoListApp\\Controllers\\ListItemController.cs",
+              "ToolTip": "C:\\Users\\bkiso\\OneDrive\\Dev Projects\\BlazorToDoListTutorial\\ToDoListApp\\ToDoListApp\\Controllers\\ListItemController.cs",
+              "RelativeToolTip": "ToDoListApp\\Controllers\\ListItemController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T13:45:38.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListItem.cs",
+              "DocumentMoniker": "C:\\Users\\bkiso\\OneDrive\\Dev Projects\\BlazorToDoListTutorial\\ToDoListApp\\ToDoListApp\\Models\\ListItem.cs",
+              "RelativeDocumentMoniker": "ToDoListApp\\Models\\ListItem.cs",
+              "ToolTip": "C:\\Users\\bkiso\\OneDrive\\Dev Projects\\BlazorToDoListTutorial\\ToDoListApp\\ToDoListApp\\Models\\ListItem.cs",
+              "RelativeToolTip": "ToDoListApp\\Models\\ListItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T13:31:57.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

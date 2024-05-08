@@ -1,0 +1,78 @@
+﻿@page "/"
+@using MongoDB.Bson
+@using ToDoListApp.Models
+@using ToDoListApp.Controllers
+@inject ListItemController listItemController
+
+<PageTitle>To Do List</PageTitle>
+
+<h1>To Do List</h1>
+
+@* Table for showing / editing To Do List*@
+<table class="table">
+    <tbody>
+        <tr>
+            <td colspan="3"><input type="text" class="form-control" placeholder="New list item..." value=@NewItemContent @oninput="(e) => NewItemContent = e.Value.ToString()"></td>
+            <td><button class="btn btn-primary" @onclick="() => AddListItem()"><span class="oi oi-plus" /></button></td>
+        </tr>
+        @foreach (var listItem in this.ListItems)
+        {
+            <tr>
+                <td><input type="checkbox" checked=@listItem.IsCompleted @onchange="() => ToggleIsCompleted(listItem)" /></td>
+                <td colspan="2">@listItem.Content</td>
+                <td><button class="btn btn-danger" @onclick="() => DeleteListItem(listItem)"><span class="oi oi-trash" /></button></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    // Define list field which will hold all list items
+    private List<ListItem>? ListItems;
+
+    // Define string field which will hold Content for a new list item while it is being added
+    private string NewItemContent;
+
+    // Use OnInitializedAsync method to set initial value of the To Do List
+    protected override async Task OnInitializedAsync()
+    {
+        // Use the controller to set the value for List Items
+        this.ListItems = await listItemController.GetAllListItems();
+    }
+
+    // Method for adding a To Do List item
+    public async void AddListItem()
+    {
+        // Create a new instance of the ListItem class
+        ListItem listItem = new ListItem(NewItemContent);
+
+        // Add the new list item to the database
+        await listItemController.AddListItem(listItem);
+
+        // Update the list of items on the current page
+        this.ListItems = await listItemController.GetAllListItems();
+
+        // Reset the NewItemContent field to null
+        this.NewItemContent = null;
+    }
+
+    // Method for deleting a To Do List item
+    public async void DeleteListItem(ListItem listItem)
+    {
+        // Delete the list item from the database
+        await listItemController.DeleteListItem(listItem.Id);
+
+        // Update the list of items on the current page
+        this.ListItems = await listItemController.GetAllListItems();
+    }
+
+    // Method for completing / incompleting a To Do List item
+    public async void ToggleIsCompleted(ListItem listItem)
+    {
+        // Toggle the value of IsCompleted
+        listItem.IsCompleted = !listItem.IsCompleted;
+
+        // Update the list item in the database
+        await listItemController.UpdateListItem(listItem);
+    }
+}
